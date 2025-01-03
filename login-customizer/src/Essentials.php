@@ -35,7 +35,7 @@ class Essentials {
 	public function __construct() {
 
 		$this->define_constants();
-		add_action( 'plugins_loaded', array($this, 'load_text_domain' ) );
+		add_action( 'init', array($this, 'load_text_domain' ) );
 	}
 
 	/**
