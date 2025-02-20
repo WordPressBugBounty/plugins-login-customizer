@@ -3,7 +3,7 @@
 * Plugin Name: 			Custom Login Page Customizer
 * Plugin URI: 			https://loginpress.pro/?utm_source=login-customizer-lite&utm_medium=plugin-url-link
 * Description: 			Custom Login Customizer plugin allows you to easily customize your login page straight from your WordPress Customizer! Awesome, right?
-* Version: 				2.5.0
+* Version: 				2.5.1
 * Requires at least: 	5.0
 * Requires PHP:      	5.6
 * Author: 				Hardeep Asrani
@@ -22,16 +22,16 @@
 */
 namespace LoginCustomizer;
 
-if ( ! function_exists( 'lc_fs' ) ) {
+if ( ! function_exists( 'lc_fs2324234' ) ) {
     // Create a helper function for easy SDK access.
-    function lc_fs() {
-        global $lc_fs;
+    function lc_fs2324234() {
+        global $lc_fs2324234;
 
-        if ( ! isset( $lc_fs ) ) {
+        if ( ! isset( $lc_fs2324234 ) ) {
             // Include Freemius SDK.
             require_once dirname(__FILE__) . '/freemius/start.php';
 
-            $lc_fs = fs_dynamic_init( array(
+            $lc_fs2324234 = fs_dynamic_init( array(
                 'id'                  => '8656',
                 'slug'                => 'login-customizer',
                 'type'                => 'plugin',
@@ -40,19 +40,20 @@ if ( ! function_exists( 'lc_fs' ) ) {
                 'has_addons'          => false,
                 'has_paid_plans'      => false,
                 'menu'                => array(
+                    'slug'           => 'login-customizer',
                     'account'        => false,
                     'support'        => false,
                 ),
             ) );
         }
 
-        return $lc_fs;
+        return $lc_fs2324234;
     }
 
     // Init Freemius.
-    lc_fs();
+    lc_fs2324234();
     // Signal that SDK was initiated.
-    do_action( 'lc_fs_loaded' );
+    do_action( 'lc_fs2324234_loaded' );
 }
 
 defined( 'ABSPATH' ) || exit;

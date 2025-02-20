@@ -5,7 +5,7 @@ Contributors: hardeepasrani, hiddenpearls
 Donate link: https://wpbrigade.com/go/donate-login-customizer
 Author URI: https://loginpress.pro/?utm_source=login-customizer-lite&utm_medium=author-url-link
 Tags: login, customizer, wp login, login page, custom login
-Stable tag: 2.5.0
+Stable tag: 2.5.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -105,10 +105,14 @@ Please visit <a target="_blank" rel="nofollow" href="https://loginpress.pro/?utm
 
 == Upgrade Notice ==
 
-= 2.5.0 =
+= 2.5.1 =
 * Update immediately - compatible with 6.7
 
 == Changelog ==
+
+= 2.5.1 – 2025-02-20 =
+* Enhancement: Updated the Freemius latest SDK v2.11.0.
+* Compatibility: Compatible with WordPress 6.7
 
 = 2.5.0 – 2025-01-03 =
 * Bugfix: PHP Warning for translation hook.
@@ -120,7 +124,7 @@ Please visit <a target="_blank" rel="nofollow" href="https://loginpress.pro/?utm
 
 = 2.4.0 – 2024-07-08 =
 * Bugfix: Remove the depreciated warning from login customizer.
-* Enhancement: Update the Freemius latest SDK v2.7.2
+* Enhancement: Updated the Freemius latest SDK v2.7.2
 * Compatibility: Compatible with WordPress 6.6
 
 = 2.3.2 – 2023-12-21 =
@@ -128,7 +132,7 @@ Please visit <a target="_blank" rel="nofollow" href="https://loginpress.pro/?utm
 * Compatibility: Compatible with WordPress 6.4
 
 = 2.3.1 – 2023-11-07 =
-* Enhancement: Update the Freemius latest SDK v2.6.0.
+* Enhancement: Updated the Freemius latest SDK v2.6.0.
 * Compatibility: Compatible with WordPress 6.4
 
 = 2.3.0 – 2023-10-25 =
@@ -137,14 +141,14 @@ Please visit <a target="_blank" rel="nofollow" href="https://loginpress.pro/?utm
 * Compatibility: Compatible with WordPress 6.3
 
 = 2.2.3 – 2023-07-20 =
-* Enhancement: Update the Freemius latest SDK v2.5.10.
+* Enhancement: Updated the Freemius latest SDK v2.5.10.
 * Compatibility: Compatible with WordPress 6.2
 
 = 2.2.2 – 2023-07-10 =
-* Enhancement: Update the Freemius SDK v2.5.9.
+* Enhancement: Updated the Freemius SDK v2.5.9.
 
 = 2.2.1 – 2023-03-24 =
-* Enhancement: Update the Freemius SDK v2.5.5.
+* Enhancement: Updated the Freemius SDK v2.5.5.
 * Enhancement: Update the .pot file.
 * Compatibility: Compatible with WordPress 6.2
 
@@ -157,7 +161,7 @@ Please visit <a target="_blank" rel="nofollow" href="https://loginpress.pro/?utm
 * Compatibility: Compatible with WordPress 6.0
 
 = 2.1.8 – 2022-03-08 =
-* Security Fix: Update the Freemius SDK v2.4.3.
+* Security Fix: Updated the Freemius SDK v2.4.3.
 
 = 2.1.7 – 2022-02-18 =
 * New Feature: Introducing Language Switcher (On / Off) setting.
