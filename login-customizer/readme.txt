@@ -1,11 +1,11 @@
 === Custom Login Page Customizer ===
 Requires at least: 4.0
-Tested up to: 6.7
+Tested up to: 6.8
 Contributors: hardeepasrani, hiddenpearls
 Donate link: https://wpbrigade.com/go/donate-login-customizer
 Author URI: https://loginpress.pro/?utm_source=login-customizer-lite&utm_medium=author-url-link
 Tags: login, customizer, wp login, login page, custom login
-Stable tag: 2.5.1
+Stable tag: 2.5.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -105,10 +105,15 @@ Please visit <a target="_blank" rel="nofollow" href="https://loginpress.pro/?utm
 
 == Upgrade Notice ==
 
-= 2.5.1 =
-* Update immediately - compatible with 6.7
+= 2.5.2 =
+* Update immediately - compatible with 6.8
 
 == Changelog ==
+
+= 2.5.2 – 2025-04-19 =
+* Bugfix: Redirect issue on the plugin settings page open 1st time installation.
+* Bugfix: Set min height of the login form.
+* Compatibility: Compatible with WordPress 6.8
 
 = 2.5.1 – 2025-02-20 =
 * Enhancement: Updated the Freemius latest SDK v2.11.0.

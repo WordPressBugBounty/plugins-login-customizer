@@ -43,7 +43,7 @@ namespace LoginCustomizer\Settings;
      */
     function admin_enqueue_scripts( $hook ) {
 
-		if( ( $hook != 'toplevel_page_login-customizer-settings' && $hook != 'login-customizer_page_login-customizer-help' ) ) {
+		if( ( $hook != 'toplevel_page_login-customizer' && $hook != 'login-customizer_page_login-customizer-help' ) ) {
 			return;
 		}
 

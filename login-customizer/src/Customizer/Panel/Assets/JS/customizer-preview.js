@@ -241,7 +241,7 @@
 				$("#customize-preview iframe")
 						.contents()
 						.find("#login form#loginform")
-						.css({ 'height': newval });
+						.css({ 'min-height': newval });
 			});
 		});
 

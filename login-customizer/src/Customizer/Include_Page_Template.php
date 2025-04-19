@@ -63,9 +63,8 @@ class LoginCustomizerTemplate {
 		// template assigned and return it's path
 		add_filter( 'template_include', array( $this, 'view_project_template') );
 
-		// Add your templates to this array.
-		$this->templates = array( 'template-login-customizer.php' => __( 'Login Customizer Template', 'login-customizer' ), );
-
+		
+		add_action( 'init', array( $this, 'login_customizer_temp_init') );
 	}
 
 	/**
@@ -84,6 +83,17 @@ class LoginCustomizerTemplate {
 		}
 
 		return $posts_templates;
+	}
+
+	/**
+	 * init callback
+	 * Used to initialize the login customizer template
+	 *
+	 * @since 2.5.2
+	 */
+	public function login_customizer_temp_init() {
+		// Add your templates to this array.
+		$this->templates = array( 'template-login-customizer.php' => __( 'Login Customizer Template', 'login-customizer' ), );
 	}
 
 	/**

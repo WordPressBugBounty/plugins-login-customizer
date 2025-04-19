@@ -87,7 +87,7 @@ namespace LoginCustomizer\Customizer\Panel;
 			$custom_css .= 'background-color: ' . $options['logincust_form_bg_color'] . ';';
 		}
 		if ( ! empty( $options['logincust_form_height'] ) ) {
-			$custom_css .= 'height: ' . $options['logincust_form_height'] . ';';
+			$custom_css .= 'min-height: ' . $options['logincust_form_height'] . ';';
 		}
 		if ( ! empty( $options['logincust_form_padding'] ) ) {
 			$custom_css .= 'padding: ' . $options['logincust_form_padding'] . ';';

@@ -108,7 +108,7 @@ class Plugin_Meta {
 				),
 				admin_url( 'customize.php' )
 			) . '">', '</a>' );
-			$settings_link .= sprintf( esc_html__( ' | %1$s Settings %2$s ', 'login-customizer'), '<a href="' . admin_url( 'admin.php?page=login-customizer-settings' ) . '">', '</a>' );
+			$settings_link .= sprintf( esc_html__( ' | %1$s Settings %2$s ', 'login-customizer'), '<a href="' . admin_url( 'admin.php?page=login-customizer' ) . '">', '</a>' );
 
       		array_unshift( $links, $settings_link );
 

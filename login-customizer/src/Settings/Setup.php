@@ -85,13 +85,13 @@ class Setup {
 
 		$submenu['themes.php'][] = array( 'Login Customizer', 'manage_options', $url, 'login-customizer' );
 		//Side-bar Menu listing
-		add_menu_page( __( 'Login Customizer', 'login-customizer' ), __( 'Login Customizer', 'login-customizer' ), 'manage_options', "login-customizer-settings", array( $this, 'plugin_page' ), false, 50 );
+		add_menu_page( __( 'Login Customizer', 'login-customizer' ), __( 'Login Customizer', 'login-customizer' ), 'manage_options', "login-customizer", array( $this, 'plugin_page' ), false, 50 );
 
-		add_submenu_page( 'login-customizer-settings', __( 'Settings', 'login-customizer' ), __( 'Settings', 'login-customizer' ), 'manage_options', "login-customizer-settings", array( $this, 'plugin_page' ) );
+		add_submenu_page( 'login-customizer', __( 'Settings', 'login-customizer' ), __( 'Settings', 'login-customizer' ), 'manage_options', "login-customizer", array( $this, 'plugin_page' ) );
 
-		add_submenu_page( 'login-customizer-settings', __( 'Customizer', 'login-customizer' ), __( 'Customizer', 'login-customizer' ), 'manage_options', "$url" );
+		add_submenu_page( 'login-customizer', __( 'Customizer', 'login-customizer' ), __( 'Customizer', 'login-customizer' ), 'manage_options', "$url" );
 
-		add_submenu_page( 'login-customizer-settings', __( 'Help', 'login-customizer' ), __( 'Help', 'login-customizer' ), 'manage_options', "login-customizer-help", array( $this, 'logincust_help_page' ) );
+		add_submenu_page( 'login-customizer', __( 'Help', 'login-customizer' ), __( 'Help', 'login-customizer' ), 'manage_options', "login-customizer-help", array( $this, 'logincust_help_page' ) );
 
 	}
 
@@ -128,7 +128,7 @@ class Setup {
 		  color: #fff;
 		}
   
-		#adminmenu li#toplevel_page_login-customizer-settings>a>div.wp-menu-image:before{
+		#adminmenu li#toplevel_page_login-customizer>a>div.wp-menu-image:before{
 		  content: '\\e901';
 		  font-family: 'login-customizer' !important;
 		  speak: none;
