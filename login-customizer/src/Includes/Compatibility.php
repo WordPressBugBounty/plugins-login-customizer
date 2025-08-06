@@ -36,6 +36,10 @@ class Compatibility {
 			} else {
 				add_filter( 'wp_sitemaps_posts_query_args', array( $this, 'logincust_exclude_from_sitemap' ), 10, 2 );
 			}
+
+			if ( is_plugin_active( 'seo-by-rank-math/rank-math.php' ) ) {
+				add_filter( 'rank_math/sitemap/posts_to_exclude', array( $this, 'logincust_exclude_from_rankmath_sitemap' ), 10, 1 );
+			}
 		}
 	}
 
@@ -72,5 +76,21 @@ class Compatibility {
 		if ( is_object( $page ) ) {
 			return array( $page->ID );
 		}
+	}
+
+	/**
+	 * Exclude Login Customizer page from Rank Math sitemap.
+	 *
+	 * @param  array $posts Array of post IDs.
+	 * @return array        Array of post IDs.
+	 * @since 2.5.3
+	 */
+	public function logincust_exclude_from_rankmath_sitemap( $posts ) {
+
+		$page = get_page_by_path( 'login-customizer' );
+		if ( is_object( $page ) ) {
+			$posts[] = $page->ID;
+		}
+		return $posts;
 	}
 }

@@ -3,7 +3,7 @@
 * Plugin Name: 			Custom Login Page Customizer
 * Plugin URI: 			https://loginpress.pro/?utm_source=login-customizer-lite&utm_medium=plugin-url-link
 * Description: 			Custom Login Customizer plugin allows you to easily customize your login page straight from your WordPress Customizer! Awesome, right?
-* Version: 				2.5.2
+* Version: 				2.5.3
 * Requires at least: 	5.0
 * Requires PHP:      	5.6
 * Author: 				Hardeep Asrani
@@ -13,6 +13,7 @@
 * License: 				GPLv2+
 * Text Domain: 			login-customizer
 * Domain Path: 			/resources/languages
+* GitHub Plugin URI:    https://github.com/WPBrigade/login-customizer
 *
 * @package 			LoginCustomizer
 * @author 			WPBrigade

@@ -5,7 +5,7 @@ Contributors: hardeepasrani, hiddenpearls
 Donate link: https://wpbrigade.com/go/donate-login-customizer
 Author URI: https://loginpress.pro/?utm_source=login-customizer-lite&utm_medium=author-url-link
 Tags: login, customizer, wp login, login page, custom login
-Stable tag: 2.5.2
+Stable tag: 2.5.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -105,10 +105,14 @@ Please visit <a target="_blank" rel="nofollow" href="https://loginpress.pro/?utm
 
 == Upgrade Notice ==
 
-= 2.5.2 =
+= 2.5.3 =
 * Update immediately - compatible with 6.8
 
 == Changelog ==
+
+= 2.5.3 – 2025-08-06 =
+* Enhancement: Excluded the `Login Customizer` page from the `Rank Math SEO` plugin's sitemap.
+* Compatibility: Compatible with WordPress 6.8
 
 = 2.5.2 – 2025-04-19 =
 * Bugfix: Redirect issue on the plugin settings page open 1st time installation.
