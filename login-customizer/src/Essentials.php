@@ -15,7 +15,7 @@ namespace LoginCustomizer;
  * Constant class.
  *
  * @since  2.2.0
- * @version 2.2.0
+ * @version 2.5.4
  * @access public
  */
 
@@ -26,7 +26,7 @@ class Essentials {
 	 *
 	 * @var string
 	 */
-	public $version = '2.5.3-beta';
+	public $version = '2.5.4';
 
 	/**
 	 * Class Essentials construct

@@ -1,7 +1,7 @@
 # Custom Login Page Customizer #
 **Stable tag:** trunk  
 **Requires at least:** 4.0  
-**Tested up to:** 6.8
+**Tested up to:** 6.9
 **Contributors:** [hardeepasrani](https://profiles.wordpress.org/hardeepasrani), [hiddenpearls](https://profiles.wordpress.org/hiddenpearls)
 **Author URI:** https://loginpress.pro/
 **Tags:** login, customizer, logo, login logo, login customizer, login page,admin, branding, customization, custom login, error, login error, custom login pro  
@@ -40,6 +40,10 @@ Please visit <a target="_blank" rel="nofollow" href="https://loginpress.pro/">th
 2. Another Great Custom Login Page Example
 
 ## Changelog ##
+
+### 2.5.4 – 2025-01-05 ###
+* Security: Fixed a vulnerability in the user registration process.
+* Compatibility: Compatible with WordPress 6.9
 
 ### 2.5.3 – 2025-08-06 ###
 * Enhancement: Excluded the `Login Customizer` page from the `Rank Math SEO` plugin's sitemap.

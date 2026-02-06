@@ -6,6 +6,7 @@
 *
 * @package Login Customizer
 * @since 2.2.0
+* @version 2.5.4
 */
 
 namespace LoginCustomizer\Settings\Features;
@@ -30,7 +31,6 @@ class Custom_Register_Password {
 
 		add_action( 'register_form',                  array( $this, 'logincust_reg_password_fields' ) );
 		add_filter( 'registration_errors',            array( $this, 'logincust_reg_pass_errors' ), 10, 3 );
-		add_filter( 'random_password',                array( $this, 'logincust_set_password' ) );
 		add_action( 'register_new_user',              array( $this, 'update_default_password_nag' ) );
 		add_filter( 'wp_new_user_notification_email', array( $this, 'logincust_new_user_email_notification' ) );
     }
@@ -90,36 +90,23 @@ class Custom_Register_Password {
     }
 
     /**
-    * Let's set the user password.
-    *
-    * @access public
-	* @param string $password Auto-generated password passed in from filter.
-	*
-	* @since 2.2.0
-    * @return string Password Choose by User.
-    */
-    public function logincust_set_password( $password ) {
-
-		// Make sure password field isn't empty.
-		if ( ! empty( $_POST['user_pass'] ) ) {
-			$password = $_POST['user_pass'];
-		}
-
-		return $password;
-    }
-
-    /**
     * Sets the value of default password nag.
     *
     * @access public
 	* @param int $user_id.
 	*
 	* @since 2.2.0
+	* @version 2.5.4
+	* @return void
     */
     public function update_default_password_nag( $user_id ) {
 
 		// False => User not using WordPress default password.
 		update_user_meta( $user_id, 'default_password_nag', false );
+		if ( isset( $_POST['user_pass'] ) && ! empty( $_POST['user_pass'] ) ) {
+			$password = sanitize_text_field( wp_unslash( $_POST['user_pass'] ) );
+			wp_set_password( $password, $user_id );
+		}
     }
 
     /**
